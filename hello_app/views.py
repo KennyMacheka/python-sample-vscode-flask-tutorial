@@ -53,5 +53,7 @@ def send_post_request():
          }
     }] }
 
+    data2 = {"type" : "message", "text" : "Hello there, from incoming webhook"}
+
     requests.post("https://kennymacheka.webhook.office.com/webhookb2/4aefee57-dba7-4cd6-9c14-4a2ca2755c6d@8103d5db-e42e-4c9c-af0b-4cee9bd0879e/IncomingWebhook/a869f391d77643c1b2284189b19972d0/b63c907a-d913-484a-823a-5a7e8dbb43f3",
-                  data = data)
+                  data = data2)
