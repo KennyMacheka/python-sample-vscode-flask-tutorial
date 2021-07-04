@@ -5,6 +5,7 @@ from . import app
 
 @app.route('/messages', methods=['GET', 'POST'])
 def ms_teams():
+    send_post_request()
     return {"type" : "message", "text" : "Hello there, Mr Kenobi"}
 
 @app.route("/")
@@ -27,7 +28,6 @@ def hello_there(name = None):
         name=name,
         date=datetime.now()
     )
-    send_post_request()
 
 @app.route("/api/data")
 def get_data():
