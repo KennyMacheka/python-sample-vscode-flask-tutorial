@@ -4,7 +4,7 @@ from . import app
 
 @app.route('/messages', methods=['GET', 'POST'])
 def ms_teams():
-    return "Hello there, Mr Kenobi"
+    return {"type" : "message", "text" : "Hello there, Mr Kenobi"}
 
 @app.route("/")
 def home():
