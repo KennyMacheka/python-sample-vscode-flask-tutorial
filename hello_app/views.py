@@ -2,6 +2,10 @@ from datetime import datetime
 from flask import Flask, render_template
 from . import app
 
+@app.route('/messages', methods=['GET', 'POST'])
+def ms_teams():
+    return "Hello there, Mr Kenobi"
+
 @app.route("/")
 def home():
     return render_template("home.html")
