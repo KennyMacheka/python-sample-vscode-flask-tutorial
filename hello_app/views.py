@@ -1,8 +1,8 @@
 import requests
 from datetime import datetime
 from flask import Flask, render_template
-#Wfrom . import app
-"""
+from . import app
+
 @app.route('/messages', methods=['GET', 'POST'])
 def ms_teams():
     send_post_request()
@@ -31,7 +31,7 @@ def hello_there(name = None):
 
 @app.route("/api/data")
 def get_data():
-    return app.send_static_file("data.json")"""
+    return app.send_static_file("data.json")
 
 def send_post_request():
     null = None
